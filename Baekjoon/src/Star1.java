@@ -7,11 +7,14 @@ public class Star1 {
 		int count= sc.nextInt();
 		String star = "*";
 		
-		for (int a=0; a<count; a++) {
-			for (int b=0; b<a+1; b++) {
-			System.out.print(star);
+		for (int a = 0; a < count; a++) {
+			for (int b = count-a-1; b > 0; b--) {
+				System.out.print(" ");
 			}
-			System.out.println("");
+			for (int c = 0; c < a+1; c++) {
+				System.out.print(star);
+			}
+			System.out.println();
 		}
 
 	}
